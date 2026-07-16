@@ -848,7 +848,7 @@ body.intro-active{overflow:hidden}
 .about-v4__lead{max-width:660px;margin:32px 0 30px;color:var(--muted);font-size:14px;line-height:1.85}
 .about-v4__quote{
   max-width:720px;
-  margin:0 0 32px;
+  margin:0 0 40px;
   padding:24px 0 25px 28px;
   border-left:1px solid var(--gold);
   border-top:1px solid var(--line);
@@ -892,10 +892,10 @@ body.intro-active{overflow:hidden}
 .social-v4__desktop::after{content:"";position:absolute;left:50%;bottom:-22px;width:42%;height:22px;transform:translateX(-50%);background:#101927;clip-path:polygon(10% 0,90% 0,100% 100%,0 100%)}
 .social-v4__desktop .device__top{height:17px;display:flex;align-items:center;gap:5px;padding:0 8px;background:#101927}
 .social-v4__desktop .device__top i{width:5px;height:5px;border-radius:50%;background:rgba(255,255,255,.28)}
-.social-v4__desktop img{width:100%;height:calc(100% - 17px);object-fit:contain;object-position:top center;background:#fff}
+.social-v4__desktop img{width:100%;height:calc(100% - 17px);object-fit:cover;object-position:top center;background:#fff;transform:scale(1.045);transform-origin:top center;filter:contrast(1.04) saturate(1.03);image-rendering:-webkit-optimize-contrast;image-rendering:high-quality}
 .social-v4__phone{height:410px;border:8px solid #101927;border-radius:31px}
 .social-v4__phone .device__notch{position:absolute;z-index:2;left:50%;top:0;width:42%;height:14px;transform:translateX(-50%);border-radius:0 0 10px 10px;background:#101927}
-.social-v4__phone img{width:100%;height:100%;object-fit:contain;object-position:top center;background:#fff}
+.social-v4__phone img{width:100%;height:100%;object-fit:cover;object-position:top center;background:#fff;transform:scale(1.06);transform-origin:top center;filter:contrast(1.04) saturate(1.03);image-rendering:-webkit-optimize-contrast;image-rendering:high-quality}
 
 /* No bottom quick-action tiles in final delivery */
 .quick-strip{display:none!important}
@@ -913,3 +913,7 @@ body.intro-active{overflow:hidden}
   .about-v4__portrait{min-height:440px;padding-left:20px}.about-v4__frame{height:430px}.about-v4__seal{width:100px;height:100px;bottom:25px}.about-v4__seal span{font-size:30px}.about-v4__seal small{bottom:23px}.about-v4__quote{font-size:25px;padding-left:18px}.about-v4__steps article{grid-template-columns:24px 1fr}
   .social-v4{padding:65px 18px}.social-v4__stage{grid-template-columns:1fr;gap:18px;min-height:auto;padding:16px}.social-v4__desktop{height:245px}.social-v4__desktop::after{display:none}.social-v4__phone{width:150px;height:330px;justify-self:center}.social-links--light{flex-direction:column}.social-links--light a{width:100%}
 }
+
+
+/* Final micro-fix: removed 3-step row under O mnie */
+.about-v4__steps{display:none!important}
