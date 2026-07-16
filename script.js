@@ -1,6 +1,25 @@
 (() => {
   'use strict';
 
+  const intro = document.querySelector('[data-intro]');
+  const forceIntro = new URLSearchParams(window.location.search).get('intro') === '1';
+  const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  let introSeen = false;
+  try { introSeen = sessionStorage.getItem('olimpia-intro-seen') === '1'; } catch (error) {}
+
+  if (intro && !reducedMotion && (!introSeen || forceIntro)) {
+    document.body.classList.add('intro-active');
+    requestAnimationFrame(() => intro.classList.add('is-running'));
+    window.setTimeout(() => {
+      intro.classList.add('is-finished');
+      document.body.classList.remove('intro-active');
+      try { sessionStorage.setItem('olimpia-intro-seen', '1'); } catch (error) {}
+      window.setTimeout(() => intro.remove(), 420);
+    }, 2750);
+  } else if (intro) {
+    intro.remove();
+  }
+
   const header = document.querySelector('[data-header]');
   const menuToggle = document.querySelector('[data-menu-toggle]');
   const menu = document.querySelector('[data-menu]');
