@@ -34,6 +34,17 @@
     }, 3800);
   }
 
+
+  const portalSlides = [...document.querySelectorAll('.hero-portal__slide')];
+  if (portalSlides.length > 1 && !reducedMotion) {
+    let portalIndex = 0;
+    window.setInterval(() => {
+      portalSlides[portalIndex].classList.remove('is-active');
+      portalIndex = (portalIndex + 1) % portalSlides.length;
+      portalSlides[portalIndex].classList.add('is-active');
+    }, 3300);
+  }
+
   const revealItems = document.querySelectorAll('.reveal');
   if ('IntersectionObserver' in window && !reducedMotion) {
     const observer = new IntersectionObserver(entries => {
@@ -93,6 +104,35 @@
       });
       area.addEventListener('pointerleave', () => {
         layers.forEach(layer => { layer.style.transform = ''; });
+      });
+    });
+  }
+
+  const studioStory = document.querySelector('[data-studio-story]');
+  if (studioStory) {
+    const main = studioStory.querySelector('[data-studio-main]');
+    const title = studioStory.querySelector('[data-studio-title]');
+    const caption = studioStory.querySelector('[data-studio-caption]');
+    const number = studioStory.querySelector('[data-studio-number]');
+    const stage = studioStory.querySelector('.studio-story__stage');
+    const thumbs = [...studioStory.querySelectorAll('.studio-thumb')];
+
+    thumbs.forEach((thumb, index) => {
+      thumb.addEventListener('click', () => {
+        if (thumb.classList.contains('is-active')) return;
+        thumbs.forEach(item => item.classList.remove('is-active'));
+        thumb.classList.add('is-active');
+        stage?.classList.add('is-changing');
+        window.setTimeout(() => {
+          if (main) {
+            main.src = thumb.dataset.src || main.src;
+            main.alt = thumb.dataset.alt || '';
+          }
+          if (title) title.textContent = thumb.dataset.title || '';
+          if (caption) caption.textContent = thumb.dataset.caption || '';
+          if (number) number.textContent = `${String(index + 1).padStart(2, '0')} / ${String(thumbs.length).padStart(2, '0')}`;
+          stage?.classList.remove('is-changing');
+        }, 240);
       });
     });
   }
