@@ -3,22 +3,22 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#2b4170">
-  <meta name="description" content="Olimpia Beauty & Massage — masaże, rytuały Head SPA i pielęgnacja ciała w śródziemnomorskiej atmosferze w Rudzie Śląskiej.">
+  <meta name="theme-color" content="#17345d">
+  <meta name="description" content="Olimpia Beauty & Massage — masaże, rytuały Head SPA i pielęgnacja ciała w Rudzie Śląskiej.">
   <title>Olimpia Beauty & Massage | Ruda Śląska</title>
   <link rel="icon" href="favicon.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css?v=2.0.0">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css?v=3.0.0">
 </head>
 <body>
   <a class="skip-link" href="#main">Przejdź do treści</a>
 
   <header class="site-header" data-header>
     <a class="brand" href="#start" aria-label="Olimpia Beauty & Massage — strona główna">
-      <img src="logo-light.png" alt="Olimpia Beauty & Massage" class="brand__light">
-      <img src="logo-dark.png" alt="" aria-hidden="true" class="brand__dark">
+      <img src="logo-dark.png" alt="Olimpia Beauty & Massage" class="brand__dark">
+      <img src="logo-light.png" alt="" aria-hidden="true" class="brand__light">
     </a>
 
     <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="main-nav" data-menu-toggle>
@@ -29,6 +29,7 @@
     <nav class="main-nav" id="main-nav" data-menu>
       <a href="#o-mnie">O mnie</a>
       <a href="#rytualy">Rytuały</a>
+      <a href="#cennik">Cennik</a>
       <a href="#studio">Studio</a>
       <a href="#kontakt">Kontakt</a>
       <a class="nav-book" href="https://booksy.com/pl-pl/286479_olimpia-beauty-massage_masaz_12326_ruda-slaska" target="_blank" rel="noopener">Umów wizytę <span>↗</span></a>
@@ -36,325 +37,291 @@
   </header>
 
   <main id="main">
-    <section class="hero hero--portal" id="start" aria-label="Olimpia Beauty & Massage">
-      <div class="hero__media" aria-hidden="true">
-        <img src="hero.jpg" alt="">
-        <div class="hero__light"></div>
+    <section class="hero" id="start" aria-label="Olimpia Beauty & Massage">
+      <div class="hero__slides" data-hero-slides aria-hidden="true">
+        <img class="hero__slide is-active" src="hero-1.jpg" alt="">
+        <img class="hero__slide" src="hero-2.jpg" alt="">
+        <img class="hero__slide" src="hero-3.jpg" alt="">
       </div>
       <div class="hero__veil"></div>
-      <div class="hero__grain" aria-hidden="true"></div>
+      <div class="hero__grain"></div>
+      <div class="hero__meander hero__meander--left" aria-hidden="true"></div>
+      <div class="hero__meander hero__meander--right" aria-hidden="true"></div>
 
       <div class="hero__content">
-        <p class="eyebrow hero__eyebrow">Beauty · Massage · Head SPA</p>
-        <div class="hero__rotator" data-hero-rotator aria-live="polite">
-          <h1 class="hero__title is-active">Rytuały stworzone<br>dla Twojego spokoju.</h1>
-          <h2 class="hero__title">Piękno inspirowane<br>harmonią.</h2>
-          <h2 class="hero__title">Dotyk, który pozwala<br>naprawdę zwolnić.</h2>
+        <p class="eyebrow reveal">Olimpia Beauty & Massage · Ruda Śląska</p>
+        <h1 class="hero__title reveal">Rytuały, które<br><em>przywracają harmonię.</em></h1>
+        <p class="hero__lead reveal">Masaże, Head SPA i pielęgnacja ciała w przestrzeni inspirowanej spokojem, światłem i ponadczasową elegancją starożytnej Grecji.</p>
+        <div class="hero__actions reveal">
+          <a class="button button--primary" href="https://booksy.com/pl-pl/286479_olimpia-beauty-massage_masaz_12326_ruda-slaska" target="_blank" rel="noopener">Zarezerwuj rytuał <span>↗</span></a>
+          <a class="button button--ghost" href="#rytualy">Poznaj ofertę <span>↓</span></a>
         </div>
-        <p class="hero__lead">Masaże, Head SPA i pielęgnacja ciała w śródziemnomorskiej atmosferze.</p>
-        <div class="hero__actions">
-          <a class="button button--light" href="#rytualy">Poznaj rytuały <span>↓</span></a>
-          <a class="button button--glass" href="https://booksy.com/pl-pl/286479_olimpia-beauty-massage_masaz_12326_ruda-slaska" target="_blank" rel="noopener">Zarezerwuj wizytę <span>↗</span></a>
-        </div>
+        <a class="hero__proof reveal" href="https://booksy.com/pl-pl/286479_olimpia-beauty-massage_masaz_12326_ruda-slaska" target="_blank" rel="noopener">
+          <span class="hero__proof-score">5.0</span>
+          <span><b>86 opinii</b><small>Sprawdź profil na Booksy</small></span>
+          <i>↗</i>
+        </a>
       </div>
 
-      <div class="hero-portal" data-hero-portal aria-hidden="true">
-        <div class="hero-portal__orbit hero-portal__orbit--one"></div>
-        <div class="hero-portal__orbit hero-portal__orbit--two"></div>
-        <div class="hero-portal__frame">
-          <img class="hero-portal__slide is-active" src="separator-architecture.jpg" alt="">
-          <img class="hero-portal__slide" src="separator-details.jpg" alt="">
-          <img class="hero-portal__slide" src="separator-studio.jpg" alt="">
-          <div class="hero-portal__shine"></div>
-        </div>
-        <div class="hero-portal__caption">
-          <span>01</span>
-          <p>Światło · Marmur · Spokój</p>
-        </div>
+      <div class="hero__side-note" aria-hidden="true">
+        <span>01</span>
+        <p>Światło · dotyk · spokój</p>
       </div>
-
-      <div class="hero__meta" aria-hidden="true">
-        <span>Ruda Śląska</span>
-        <span>41–709</span>
-        <span>Scroll</span>
-      </div>
+      <div class="hero__counter" aria-hidden="true"><span data-hero-current>01</span><i></i><span>03</span></div>
+      <a class="hero__scroll" href="#o-mnie" aria-label="Przewiń do sekcji O mnie"><span></span>Przewiń</a>
     </section>
 
-    <section class="about about--editorial section section--ivory" id="o-mnie">
-      <div class="about__ghost" aria-hidden="true">OLIMPIA</div>
-      <div class="section__inner about-editorial">
-        <div class="about-editorial__copy">
-          <div class="section-kicker reveal"><span>01</span> O mnie</div>
-          <p class="about-editorial__pretitle reveal">Za Olimpią stoi uważność, doświadczenie i prawdziwa pasja do pracy z ciałem.</p>
-          <h2 class="section-title reveal">Tu nie chodzi tylko o masaż. Chodzi o to, jak czujesz się po wyjściu.</h2>
-          <div class="about-editorial__body reveal">
-            <p>Każdy rytuał zaczyna się od rozmowy i dopasowania techniki do napięć, samopoczucia oraz efektu, którego potrzebujesz właśnie dziś.</p>
-            <p>Olimpia została stworzona jako miejsce spokojne, kobiece i dopracowane — od światła oraz zapachu po ostatni ruch dłoni.</p>
-          </div>
-          <div class="about-editorial__principles reveal">
-            <span><b>01</b> Indywidualnie</span>
-            <span><b>02</b> Uważnie</span>
-            <span><b>03</b> Z efektem</span>
-          </div>
-          <a class="line-link reveal" href="#studio">Poznaj Olimpię <span>↘</span></a>
-        </div>
-
-        <div class="about-editorial__visual reveal reveal--image">
-          <div class="about-editorial__arch">
+    <section class="about section" id="o-mnie">
+      <div class="about__word" aria-hidden="true">OLIMPIA</div>
+      <div class="section__inner about__grid">
+        <div class="about__visual reveal reveal--image">
+          <div class="about__portrait">
             <img src="owner.jpg" alt="Właścicielka Olimpia Beauty & Massage" loading="lazy">
           </div>
-          <div class="about-editorial__seal" aria-hidden="true"><span>OBM</span><small>Beauty & Massage</small></div>
-          <p class="about-editorial__quote">„Najlepszy rytuał to taki, po którym ciało odzyskuje lekkość, a głowa ciszę.”</p>
+          <div class="about__column" aria-hidden="true">
+            <div class="about__column-cap"></div>
+            <div class="about__column-shaft"></div>
+            <div class="about__column-base"></div>
+          </div>
+          <div class="about__seal" aria-hidden="true"><span>OBM</span><small>Beauty & Massage</small></div>
+        </div>
+
+        <div class="about__copy">
+          <div class="section-kicker reveal"><span>01</span> O mnie</div>
+          <h2 class="section-title reveal">Dotyk, który zaczyna się od uważności.</h2>
+          <p class="about__intro reveal">Olimpia powstała jako miejsce, w którym ciało może zwolnić, a każda osoba czuje się naprawdę zaopiekowana.</p>
+          <div class="about__text reveal">
+            <p>Każdy rytuał rozpoczyna się od krótkiej rozmowy. Technika, intensywność i tempo są dopasowane do napięć, samopoczucia oraz efektu, którego potrzebujesz w danym dniu.</p>
+            <p>To połączenie profesjonalnej pracy z ciałem, kojącej atmosfery i detali, które budują poczucie spokoju od pierwszej chwili po wejściu do studia.</p>
+          </div>
+          <div class="about__principles reveal">
+            <article><span>01</span><h3>Indywidualnie</h3><p>Rytuał dopasowany do realnych potrzeb Twojego ciała.</p></article>
+            <article><span>02</span><h3>Uważnie</h3><p>Spokojna atmosfera, dokładność i pełna obecność.</p></article>
+            <article><span>03</span><h3>Z efektem</h3><p>Relaks, lekkość i regeneracja odczuwalne po wyjściu.</p></article>
+          </div>
+          <a class="line-link reveal" href="#studio">Poznaj przestrzeń Olimpii <span>↘</span></a>
         </div>
       </div>
     </section>
 
-    <section class="quote-banner" aria-label="Filozofia Olimpia">
-      <img src="separator-ritual.jpg" alt="Eleganckie naczynia, ręczniki i oliwne gałązki" loading="lazy">
-      <div class="quote-banner__shade"></div>
-      <blockquote class="reveal">„Ciało pamięta każdy moment,<br>w którym pozwalasz mu odpocząć.”</blockquote>
-    </section>
-
-    <section class="rituals section section--white" id="rytualy">
-      <div class="section__inner">
-        <div class="section-head">
-          <div>
-            <div class="section-kicker reveal"><span>02</span> Najczęściej wybierane</div>
-            <h2 class="section-title reveal">Rytuały, które przywracają równowagę.</h2>
-          </div>
-          <p class="section-head__aside reveal">Od autorskiego masażu całego ciała po kojące rytuały Head SPA. Wybierz doświadczenie dopasowane do tego, czego dziś najbardziej potrzebujesz.</p>
-        </div>
-
-        <div class="signature-rituals reveal">
-          <a class="signature-ritual" href="https://booksy.com/pl-pl/286479_olimpia-beauty-massage_masaz_12326_ruda-slaska" target="_blank" rel="noopener">
-            <span class="signature-ritual__index">01</span>
-            <div><small>Masaż autorski</small><h3>OLIMPIA</h3></div>
-            <p>Autorskie połączenie technik relaksacyjnych i głębokiej pracy z napięciem.</p>
-            <div class="signature-ritual__meta"><span>60 / 90 min</span><strong>od 190 zł</strong></div>
-            <i>↗</i>
-          </a>
-          <a class="signature-ritual" href="https://booksy.com/pl-pl/286479_olimpia-beauty-massage_masaz_12326_ruda-slaska" target="_blank" rel="noopener">
-            <span class="signature-ritual__index">02</span>
-            <div><small>Rytuał Head SPA</small><h3>ESSENTIAL</h3></div>
-            <p>Wyciszenie, pielęgnacja skóry głowy i zmysłowa ceremonia relaksu.</p>
-            <div class="signature-ritual__meta"><span>90 min</span><strong>299 zł</strong></div>
-            <i>↗</i>
-          </a>
-          <a class="signature-ritual" href="https://booksy.com/pl-pl/286479_olimpia-beauty-massage_masaz_12326_ruda-slaska" target="_blank" rel="noopener">
-            <span class="signature-ritual__index">03</span>
-            <div><small>Masaż tkanek głębokich</small><h3>ARES</h3></div>
-            <p>Precyzyjna praca z przeciążeniem, napięciem i ograniczoną ruchomością.</p>
-            <div class="signature-ritual__meta"><span>60 / 90 min</span><strong>od 190 zł</strong></div>
-            <i>↗</i>
-          </a>
-        </div>
-
-        <div class="offer-block reveal" data-offer>
-          <div class="offer-block__head">
-            <span>Pełna oferta</span>
-            <p>Rozwiń kategorię, aby zobaczyć przykładowe rytuały.</p>
-          </div>
-
-          <div class="offer-list">
-            <article class="offer-item">
-              <button class="offer-trigger" type="button" aria-expanded="false">
-                <span class="offer-index">01</span>
-                <span class="offer-name">Zabiegi łączone Combo</span>
-                <span class="offer-count">4 usługi</span>
-                <span class="offer-icon">+</span>
-              </button>
-              <div class="offer-panel">
-                <div class="offer-service"><span>Masaż transbukalny twarzy Special</span><small>60 min</small><strong>220 zł</strong></div>
-                <div class="offer-service"><span>Kobieca Harmonia — Plecy & 4D Lift</span><small>60 min</small><strong>230 zł</strong></div>
-                <div class="offer-service"><span>Kobido & Head Relax</span><small>90 min</small><strong>300 zł</strong></div>
-                <div class="offer-service"><span>Pistacjowo-jaśminowe otulenie</span><small>100 min</small><strong>310 zł</strong></div>
-              </div>
-            </article>
-
-            <article class="offer-item">
-              <button class="offer-trigger" type="button" aria-expanded="false"><span class="offer-index">02</span><span class="offer-name">Rytuał Head SPA</span><span class="offer-count">3 usługi</span><span class="offer-icon">+</span></button>
-              <div class="offer-panel"><p>Rytuały pielęgnacyjne i relaksacyjne skóry głowy w kilku wariantach. Pełna lista oraz dostępne terminy znajdują się na Booksy.</p></div>
-            </article>
-            <article class="offer-item">
-              <button class="offer-trigger" type="button" aria-expanded="false"><span class="offer-index">03</span><span class="offer-name">Masaże relaksacyjne</span><span class="offer-count">7 usług</span><span class="offer-icon">+</span></button>
-              <div class="offer-panel"><p>Masaże olejkami, aromatyczne rytuały i techniki nastawione na pełne wyciszenie.</p></div>
-            </article>
-            <article class="offer-item">
-              <button class="offer-trigger" type="button" aria-expanded="false"><span class="offer-index">04</span><span class="offer-name">Masaże lecznicze</span><span class="offer-count">3 usługi</span><span class="offer-icon">+</span></button>
-              <div class="offer-panel"><p>Głębsza praca z napięciem, przeciążeniem oraz ograniczoną ruchomością.</p></div>
-            </article>
-            <article class="offer-item">
-              <button class="offer-trigger" type="button" aria-expanded="false"><span class="offer-index">05</span><span class="offer-name">Masaże twarzy</span><span class="offer-count">3 usługi</span><span class="offer-icon">+</span></button>
-              <div class="offer-panel"><p>Naturalne techniki liftingujące, modelujące i rozluźniające mięśnie twarzy.</p></div>
-            </article>
-            <article class="offer-item">
-              <button class="offer-trigger" type="button" aria-expanded="false"><span class="offer-index">06</span><span class="offer-name">Masaż limfatyczny</span><span class="offer-count">1 usługa</span><span class="offer-icon">+</span></button>
-              <div class="offer-panel"><p>Delikatna technika wspierająca przepływ limfy, regenerację i uczucie lekkości.</p></div>
-            </article>
-            <article class="offer-item">
-              <button class="offer-trigger" type="button" aria-expanded="false"><span class="offer-index">07</span><span class="offer-name">Maderoterapia</span><span class="offer-count">1 usługa</span><span class="offer-icon">+</span></button>
-              <div class="offer-panel"><p>Intensywny masaż drewnianymi narzędziami wspierający modelowanie sylwetki.</p></div>
-            </article>
-            <article class="offer-item">
-              <button class="offer-trigger" type="button" aria-expanded="false"><span class="offer-index">08</span><span class="offer-name">Masaż orientalny</span><span class="offer-count">1 usługa</span><span class="offer-icon">+</span></button>
-              <div class="offer-panel"><p>Rytuał inspirowany technikami Wschodu, łączący pracę z ciałem i głęboki relaks.</p></div>
-            </article>
-            <article class="offer-item">
-              <button class="offer-trigger" type="button" aria-expanded="false"><span class="offer-index">09</span><span class="offer-name">Refleksologia</span><span class="offer-count">1 usługa</span><span class="offer-icon">+</span></button>
-              <div class="offer-panel"><p>Precyzyjna praca z punktami refleksyjnymi stóp dla odprężenia całego organizmu.</p></div>
-            </article>
-            <article class="offer-item">
-              <button class="offer-trigger" type="button" aria-expanded="false"><span class="offer-index">10</span><span class="offer-name">Zabiegi na ciało</span><span class="offer-count">1 usługa</span><span class="offer-icon">+</span></button>
-              <div class="offer-panel"><p>Pielęgnujące rytuały wygładzające i odżywiające skórę całego ciała.</p></div>
-            </article>
-          </div>
-
-          <a class="button button--blue offer-block__cta" href="https://booksy.com/pl-pl/286479_olimpia-beauty-massage_masaz_12326_ruda-slaska" target="_blank" rel="noopener">Zobacz pełny cennik na Booksy <span>↗</span></a>
-        </div>
+    <section class="quote-band" aria-label="Filozofia Olimpia">
+      <img src="quote.jpg" alt="Klasyczny taras z kolumnami i widokiem na morze" loading="lazy">
+      <div class="quote-band__shade"></div>
+      <div class="quote-band__content reveal">
+        <span>Filozofia Olimpii</span>
+        <blockquote>„Ciało pamięta każdy moment,<br>w którym pozwalasz mu odpocząć.”</blockquote>
       </div>
     </section>
 
-    <section class="studio studio--story section section--ivory" id="studio">
-      <div class="section__inner">
-        <div class="studio-story__head">
-          <div>
-            <div class="section-kicker reveal"><span>03</span> Studio</div>
-            <h2 class="section-title reveal">Śródziemnomorska atmosfera w sercu Rudy Śląskiej.</h2>
-          </div>
-          <p class="section-head__aside reveal">Granat, miękkie światło, oliwne drzewa i antyczne detale tworzą miejsce, w którym zwalniasz jeszcze przed rozpoczęciem rytuału.</p>
+    <section class="rituals" id="rytualy">
+      <div class="rituals__intro section__inner">
+        <div>
+          <div class="section-kicker reveal"><span>02</span> Rytuały Olimpii</div>
+          <h2 class="section-title reveal">Trzy doświadczenia.<br>Jeden cel — równowaga.</h2>
         </div>
+        <p class="section-aside reveal">Każdy pasek otwiera pełny opis rytuału. Wybierz ten, który odpowiada temu, czego potrzebujesz dzisiaj.</p>
+      </div>
 
-        <div class="studio-story reveal" data-studio-story>
-          <div class="studio-story__stage">
-            <img src="studio-wide.jpg" alt="Recepcja i strefa relaksu Olimpia Beauty & Massage" data-studio-main>
-            <div class="studio-story__overlay">
-              <span data-studio-number>01 / 04</span>
-              <h3 data-studio-title>Przestrzeń, która od progu zmienia tempo.</h3>
-              <p data-studio-caption>Jasna strefa wejściowa, oliwne drzewa i detale inspirowane antykiem.</p>
+      <div class="ritual-bands" data-rituals>
+        <article class="ritual-band" style="--ritual-image:url('ritual-1.jpg')">
+          <button class="ritual-band__trigger" type="button" aria-expanded="false">
+            <span class="ritual-band__number">01</span>
+            <span class="ritual-band__title"><small>Masaż autorski</small>OLIMPIA</span>
+            <span class="ritual-band__tag">Relaks · regeneracja · lekkość</span>
+            <span class="ritual-band__meta">60 / 90 min · 190 / 250 zł</span>
+            <span class="ritual-band__icon">+</span>
+          </button>
+          <div class="ritual-band__panel">
+            <div class="ritual-band__panel-inner">
+              <p>Autorskie połączenie technik relaksacyjnych i głębszej pracy z napięciem. Rytuał jest dopasowywany do kondycji ciała, poziomu stresu i obszarów, które potrzebują najwięcej uwagi.</p>
+              <ul><li>całe ciało</li><li>indywidualna intensywność</li><li>olejek dobrany do rytuału</li></ul>
+              <a class="button button--light" href="https://booksy.com/pl-pl/286479_olimpia-beauty-massage_masaz_12326_ruda-slaska" target="_blank" rel="noopener">Zarezerwuj OLIMPIĘ <span>↗</span></a>
             </div>
           </div>
-          <div class="studio-story__rail">
-            <button class="studio-thumb is-active" type="button" data-src="studio-wide.jpg" data-alt="Recepcja i strefa relaksu Olimpia Beauty & Massage" data-title="Przestrzeń, która od progu zmienia tempo." data-caption="Jasna strefa wejściowa, oliwne drzewa i detale inspirowane antykiem."><img src="studio-wide.jpg" alt=""><span>01</span></button>
-            <button class="studio-thumb" type="button" data-src="studio-blue.jpg" data-alt="Nastrojowy gabinet masażu w niebieskim świetle" data-title="Światło buduje nastrój." data-caption="Nastrojowy gabinet, w którym granat i miękkie światło wyciszają zmysły."><img src="studio-blue.jpg" alt=""><span>02</span></button>
-            <button class="studio-thumb" type="button" data-src="studio-lounge.jpg" data-alt="Jasna strefa wypoczynkowa salonu" data-title="Chwila przed i po rytuale." data-caption="Kameralna strefa odpoczynku zaprojektowana bez pośpiechu i nadmiaru."><img src="studio-lounge.jpg" alt=""><span>03</span></button>
-            <button class="studio-thumb" type="button" data-src="studio-logo.jpg" data-alt="Podświetlane logo Olimpia Beauty & Massage" data-title="Olimpia ma swój własny klimat." data-caption="Rozpoznawalny błękit, złote detale i światło, którego nie da się pomylić."><img src="studio-logo.jpg" alt=""><span>04</span></button>
+        </article>
+
+        <article class="ritual-band" style="--ritual-image:url('ritual-2.jpg')">
+          <button class="ritual-band__trigger" type="button" aria-expanded="false">
+            <span class="ritual-band__number">02</span>
+            <span class="ritual-band__title"><small>Rytuał Head SPA</small>ESSENTIAL</span>
+            <span class="ritual-band__tag">Skóra głowy · włosy · wyciszenie</span>
+            <span class="ritual-band__meta">90 min · 299 zł</span>
+            <span class="ritual-band__icon">+</span>
+          </button>
+          <div class="ritual-band__panel">
+            <div class="ritual-band__panel-inner">
+              <p>Wielostopniowa ceremonia pielęgnacji skóry głowy, włosów i zmysłów. Ciepła woda, spokojny dotyk i rytmiczny masaż pomagają odłączyć się od codziennego napięcia.</p>
+              <ul><li>diagnostyka i pielęgnacja</li><li>masaże głowy, karku i twarzy</li><li>pełne wyciszenie</li></ul>
+              <a class="button button--light" href="https://booksy.com/pl-pl/286479_olimpia-beauty-massage_masaz_12326_ruda-slaska" target="_blank" rel="noopener">Zarezerwuj ESSENTIAL <span>↗</span></a>
+            </div>
+          </div>
+        </article>
+
+        <article class="ritual-band" style="--ritual-image:url('ritual-3.jpg')">
+          <button class="ritual-band__trigger" type="button" aria-expanded="false">
+            <span class="ritual-band__number">03</span>
+            <span class="ritual-band__title"><small>Masaż tkanek głębokich</small>ARES</span>
+            <span class="ritual-band__tag">Napięcie · mobilność · regeneracja</span>
+            <span class="ritual-band__meta">60 / 90 min · 190 / 250 zł</span>
+            <span class="ritual-band__icon">+</span>
+          </button>
+          <div class="ritual-band__panel">
+            <div class="ritual-band__panel-inner">
+              <p>Precyzyjna praca z przeciążonymi i spiętymi obszarami. Tempo oraz siła są dobierane świadomie — celem jest odczuwalna ulga, poprawa ruchomości i swobodniejsze ciało.</p>
+              <ul><li>praca z napięciami</li><li>indywidualny zakres</li><li>regeneracja po wysiłku</li></ul>
+              <a class="button button--light" href="https://booksy.com/pl-pl/286479_olimpia-beauty-massage_masaz_12326_ruda-slaska" target="_blank" rel="noopener">Zarezerwuj ARESA <span>↗</span></a>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="pricing section" id="cennik">
+      <div class="pricing__ornament pricing__ornament--left" aria-hidden="true"></div>
+      <div class="pricing__ornament pricing__ornament--right" aria-hidden="true"></div>
+      <div class="section__inner">
+        <div class="pricing__head">
+          <div>
+            <div class="section-kicker reveal"><span>03</span> Oferta i cennik</div>
+            <h2 class="section-title reveal">Wybierz kierunek.<br>Resztę dopasujemy razem.</h2>
+          </div>
+          <div class="pricing__note reveal">
+            <p>Rozwiń kategorię, aby zobaczyć usługi. Aktualne terminy i pełny wybór wariantów są dostępne w Booksy.</p>
+            <a class="line-link" href="https://booksy.com/pl-pl/286479_olimpia-beauty-massage_masaz_12326_ruda-slaska" target="_blank" rel="noopener">Pełny profil Booksy <span>↗</span></a>
           </div>
         </div>
 
-        <div class="studio-story__footer reveal">
-          <div><span>Adres</span><strong>ul. Pokoju 1/4b, Ruda Śląska</strong></div>
-          <div><span>Kontakt</span><a href="tel:+48531552952">531 552 952</a></div>
-          <a class="line-link" href="#kontakt">Napisz do nas <span>↘</span></a>
+        <div class="price-list reveal" data-prices>
+          <article class="price-category">
+            <button class="price-category__trigger" type="button" aria-expanded="false"><span>01</span><strong>Zabiegi łączone Combo</strong><small>4 usługi</small><i>+</i></button>
+            <div class="price-category__panel"><div class="price-category__content">
+              <div class="service-row"><span><b>Masaż transbukalny twarzy Special</b><small>Naturalny lifting i praca na głębokich strukturach twarzy.</small></span><em>60 min</em><strong>220 zł</strong></div>
+              <div class="service-row"><span><b>Kobieca Harmonia — Plecy & 4D Lift</b><small>Rozluźnienie pleców połączone z liftingiem twarzy.</small></span><em>60 min</em><strong>230 zł</strong></div>
+              <div class="service-row"><span><b>Kobido & Head Relax</b><small>Kobido, maska i masaż skóry głowy.</small></span><em>90 min</em><strong>300 zł</strong></div>
+              <div class="service-row"><span><b>Pistacjowo-jaśminowe otulenie</b><small>Peeling, masaż ciała i relaksacyjny masaż głowy.</small></span><em>100 min</em><strong>310 zł</strong></div>
+            </div></div>
+          </article>
+
+          <article class="price-category">
+            <button class="price-category__trigger" type="button" aria-expanded="false"><span>02</span><strong>Rytuał Head SPA</strong><small>3 usługi</small><i>+</i></button>
+            <div class="price-category__panel"><div class="price-category__content price-category__content--intro"><p>Rytuały pielęgnacyjne i relaksacyjne skóry głowy, włosów, twarzy i karku. Wybór wariantu zależy od oczekiwanego zakresu ceremonii.</p><div class="service-row"><span><b>Head SPA ESSENTIAL</b><small>Wielostopniowe wyciszenie i pielęgnacja.</small></span><em>90 min</em><strong>299 zł</strong></div><a href="https://booksy.com/pl-pl/286479_olimpia-beauty-massage_masaz_12326_ruda-slaska" target="_blank" rel="noopener">Zobacz pozostałe warianty ↗</a></div></div>
+          </article>
+
+          <article class="price-category">
+            <button class="price-category__trigger" type="button" aria-expanded="false"><span>03</span><strong>Masaże relaksacyjne</strong><small>7 usług</small><i>+</i></button>
+            <div class="price-category__panel"><div class="price-category__content price-category__content--intro"><p>Spokojne rytuały całego ciała, aromatyczne olejki i tempo dobrane do poziomu napięcia. W tej kategorii znajdziesz między innymi masaż autorski OLIMPIA oraz masaże inspirowane mitologią.</p><div class="service-row"><span><b>Masaż autorski OLIMPIA</b><small>Autorskie połączenie relaksu i pracy z napięciem.</small></span><em>60 / 90 min</em><strong>190 / 250 zł</strong></div><a href="https://booksy.com/pl-pl/286479_olimpia-beauty-massage_masaz_12326_ruda-slaska" target="_blank" rel="noopener">Zobacz wszystkie masaże ↗</a></div></div>
+          </article>
+
+          <article class="price-category">
+            <button class="price-category__trigger" type="button" aria-expanded="false"><span>04</span><strong>Masaże lecznicze</strong><small>3 usługi</small><i>+</i></button>
+            <div class="price-category__panel"><div class="price-category__content price-category__content--intro"><p>Precyzyjna praca z przeciążeniami, sztywnością i ograniczoną ruchomością.</p><div class="service-row"><span><b>Masaż tkanek głębokich ARES</b><small>Intensywność dobierana indywidualnie.</small></span><em>60 / 90 min</em><strong>190 / 250 zł</strong></div><a href="https://booksy.com/pl-pl/286479_olimpia-beauty-massage_masaz_12326_ruda-slaska" target="_blank" rel="noopener">Sprawdź pełną kategorię ↗</a></div></div>
+          </article>
+
+          <article class="price-category"><button class="price-category__trigger" type="button" aria-expanded="false"><span>05</span><strong>Masaże twarzy</strong><small>3 usługi</small><i>+</i></button><div class="price-category__panel"><div class="price-category__content price-category__content--intro"><p>Manualna praca z owalem, napięciami i kondycją skóry twarzy, szyi oraz dekoltu.</p><a href="https://booksy.com/pl-pl/286479_olimpia-beauty-massage_masaz_12326_ruda-slaska" target="_blank" rel="noopener">Zobacz ceny i warianty ↗</a></div></div></article>
+          <article class="price-category"><button class="price-category__trigger" type="button" aria-expanded="false"><span>06</span><strong>Masaż limfatyczny</strong><small>1 usługa</small><i>+</i></button><div class="price-category__panel"><div class="price-category__content price-category__content--intro"><p>Delikatna, rytmiczna praca wspierająca przepływ limfy i uczucie lekkości.</p><a href="https://booksy.com/pl-pl/286479_olimpia-beauty-massage_masaz_12326_ruda-slaska" target="_blank" rel="noopener">Sprawdź szczegóły ↗</a></div></div></article>
+          <article class="price-category"><button class="price-category__trigger" type="button" aria-expanded="false"><span>07</span><strong>Maderoterapia</strong><small>1 usługa</small><i>+</i></button><div class="price-category__panel"><div class="price-category__content price-category__content--intro"><p>Intensywny zabieg modelujący wykonywany przy użyciu specjalnych drewnianych narzędzi.</p><a href="https://booksy.com/pl-pl/286479_olimpia-beauty-massage_masaz_12326_ruda-slaska" target="_blank" rel="noopener">Sprawdź szczegóły ↗</a></div></div></article>
+          <article class="price-category"><button class="price-category__trigger" type="button" aria-expanded="false"><span>08</span><strong>Masaż orientalny</strong><small>1 usługa</small><i>+</i></button><div class="price-category__panel"><div class="price-category__content price-category__content--intro"><p>Rytuał inspirowany tradycyjnymi technikami pracy z ciałem i przepływem energii.</p><a href="https://booksy.com/pl-pl/286479_olimpia-beauty-massage_masaz_12326_ruda-slaska" target="_blank" rel="noopener">Sprawdź szczegóły ↗</a></div></div></article>
+          <article class="price-category"><button class="price-category__trigger" type="button" aria-expanded="false"><span>09</span><strong>Refleksologia</strong><small>1 usługa</small><i>+</i></button><div class="price-category__panel"><div class="price-category__content price-category__content--intro"><p>Praca z punktami refleksyjnymi stóp, która wspiera głębokie wyciszenie i regenerację.</p><a href="https://booksy.com/pl-pl/286479_olimpia-beauty-massage_masaz_12326_ruda-slaska" target="_blank" rel="noopener">Sprawdź szczegóły ↗</a></div></div></article>
+          <article class="price-category"><button class="price-category__trigger" type="button" aria-expanded="false"><span>10</span><strong>Zabiegi na ciało</strong><small>1 usługa</small><i>+</i></button><div class="price-category__panel"><div class="price-category__content price-category__content--intro"><p>Pielęgnacja, wygładzenie i odżywienie skóry połączone z atmosferą rytuału.</p><a href="https://booksy.com/pl-pl/286479_olimpia-beauty-massage_masaz_12326_ruda-slaska" target="_blank" rel="noopener">Sprawdź szczegóły ↗</a></div></div></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="studio section" id="studio">
+      <div class="section__inner studio__grid">
+        <div class="studio__copy">
+          <div class="studio__sticky">
+            <div class="section-kicker reveal"><span>04</span> Studio</div>
+            <h2 class="section-title reveal">Przestrzeń, w której czas zwalnia.</h2>
+            <p class="studio__lead reveal">Prawdziwe wnętrze Olimpii łączy głęboki egejski błękit, jasne formy, złote detale i roślinność. Każdy element tworzy spokojne tło dla rytuału.</p>
+            <div class="studio__facts reveal">
+              <span><b>01</b> Prywatność</span>
+              <span><b>02</b> Atmosfera</span>
+              <span><b>03</b> Komfort</span>
+            </div>
+            <address class="studio__address reveal">Pokoju 1/4b<br>41-709 Ruda Śląska</address>
+            <a class="line-link reveal" href="https://booksy.com/pl-pl/286479_olimpia-beauty-massage_masaz_12326_ruda-slaska" target="_blank" rel="noopener">Zobacz lokalizację i terminy <span>↗</span></a>
+          </div>
+        </div>
+
+        <div class="studio__gallery">
+          <figure class="studio-card studio-card--wide reveal reveal--image"><img src="studio-wide.jpg" alt="Jasna strefa wejściowa Olimpia Beauty & Massage" loading="lazy"><figcaption><span>01</span><div><b>Świat marki</b><small>Jasne formy i klasyczne detale.</small></div></figcaption></figure>
+          <div class="studio__pair">
+            <figure class="studio-card reveal reveal--image"><img src="studio-lounge-detail.jpg" alt="Strefa odpoczynku w studio" loading="lazy"><figcaption><span>02</span><div><b>Wyciszenie</b><small>Moment przed i po rytuale.</small></div></figcaption></figure>
+            <figure class="studio-card reveal reveal--image"><img src="studio-logo.jpg" alt="Logo Olimpia w studio" loading="lazy"><figcaption><span>03</span><div><b>Tożsamość</b><small>Niebieski, biel i złoto.</small></div></figcaption></figure>
+          </div>
+          <figure class="studio-card studio-card--tall reveal reveal--image"><img src="studio-treatment.jpg" alt="Gabinet zabiegowy Olimpia" loading="lazy"><figcaption><span>04</span><div><b>Gabinet</b><small>Spokojna, intymna atmosfera.</small></div></figcaption></figure>
+          <figure class="studio-card studio-card--ritual reveal reveal--image"><img src="massage-real.jpg" alt="Masaż w Olimpia Beauty & Massage" loading="lazy"><figcaption><span>05</span><div><b>Rytuał</b><small>Profesjonalna praca z ciałem.</small></div></figcaption></figure>
+          <figure class="studio-card studio-card--ritual reveal reveal--image"><img src="headspa-real.jpg" alt="Rytuał Head SPA w Olimpia Beauty & Massage" loading="lazy"><figcaption><span>06</span><div><b>Head SPA</b><small>Woda, dotyk i pełne wyciszenie.</small></div></figcaption></figure>
         </div>
       </div>
     </section>
 
     <section class="reviews-link" aria-label="Opinie klientów">
-      <img src="separator-details.jpg" alt="Marmurowy detal w świetle" loading="lazy">
-      <div class="reviews-link__shade"></div>
-      <div class="reviews-link__content reveal">
-        <div class="section-kicker section-kicker--light"><span>04</span> Opinie</div>
-        <h2>Zobacz, jak klientki opisują swoje doświadczenie.</h2>
-        <p>Pełne, aktualne opinie znajdziesz na profilu Olimpia Beauty & Massage w Booksy.</p>
+      <div class="reviews-link__inner section__inner reveal">
+        <span class="reviews-link__score">5.0</span>
+        <div><small>Opinie klientek i klientów</small><h2>Doświadczenie, które najlepiej opisują osoby po wizycie.</h2></div>
+        <div class="reviews-link__meta"><strong>86 opinii</strong><span>100% ocen 5★</span></div>
         <a class="button button--light" href="https://booksy.com/pl-pl/286479_olimpia-beauty-massage_masaz_12326_ruda-slaska" target="_blank" rel="noopener">Przeczytaj opinie na Booksy <span>↗</span></a>
       </div>
     </section>
 
-    <section class="voucher" aria-label="Voucher prezentowy">
-      <img src="separator-architecture.jpg" alt="Jasna grecka architektura z widokiem na morze" loading="lazy">
-      <div class="voucher__overlay"></div>
-      <div class="voucher__content reveal">
-        <p class="eyebrow">Voucher prezentowy</p>
-        <h2>Podaruj komuś czas tylko dla siebie.</h2>
-        <p>Voucher możesz kupić bezpośrednio w salonie lub zamówić po kontakcie telefonicznym.</p>
-        <a class="button button--light" href="tel:+48531552952">Zapytaj o voucher <span>↗</span></a>
-      </div>
-    </section>
-
-    <section class="contact section section--white" id="kontakt">
-      <div class="section__inner contact__grid">
-        <div class="contact__copy">
+    <section class="contact section" id="kontakt">
+      <div class="section__inner contact__head">
+        <div>
           <div class="section-kicker reveal"><span>05</span> Kontakt</div>
-          <h2 class="section-title reveal">Opowiedz, czego dziś potrzebuje Twoje ciało.</h2>
-          <p class="reveal">Krótka wiadomość wystarczy. Przygotujemy jej treść i otworzymy Messenger Olimpia Beauty & Massage.</p>
-          <div class="contact__direct reveal">
-            <a href="tel:+48531552952">531 552 952</a>
-            <span>ul. Pokoju 1/4b, Ruda Śląska</span>
-          </div>
+          <h2 class="section-title reveal">Zacznij od krótkiej wiadomości.</h2>
         </div>
+        <p class="section-aside reveal">Napisz, czego potrzebujesz lub jaki efekt chcesz osiągnąć. Przygotujemy wiadomość i przekierujemy Cię do kontaktu z Olimpią.</p>
+      </div>
 
-        <form class="contact-form reveal" data-contact-form novalidate>
-          <div class="field field--wide">
-            <label for="name">Imię i nazwisko</label>
-            <input id="name" name="name" type="text" placeholder="Jak możemy się do Ciebie zwracać?" required>
-          </div>
-          <div class="field">
-            <label for="phone">Telefon</label>
-            <input id="phone" name="phone" type="tel" placeholder="+48 000 000 000">
-          </div>
-          <div class="field">
-            <label for="service">Interesujący rytuał</label>
-            <select id="service" name="service" required>
-              <option value="">Wybierz</option>
-              <option>Masaż autorski OLIMPIA</option>
-              <option>Rytuał Head SPA</option>
-              <option>Masaż tkanek głębokich ARES</option>
-              <option>Masaż twarzy</option>
-              <option>Voucher prezentowy</option>
-              <option>Nie wiem — potrzebuję porady</option>
-            </select>
-          </div>
-          <div class="field field--wide">
-            <label for="message">Kilka słów</label>
-            <textarea id="message" name="message" rows="4" placeholder="Co chciałabyś rozluźnić, poprawić lub po prostu poczuć po wizycie?"></textarea>
-          </div>
-          <label class="consent field--wide"><input type="checkbox" required><span>Wyrażam zgodę na kontakt w sprawie zapytania.</span></label>
-          <button class="button button--blue field--wide" type="submit">Wyślij zapytanie <span>↗</span></button>
-          <p class="form-note field--wide">Treść zostanie skopiowana, a następnie otworzymy Messenger.</p>
+      <div class="section__inner contact__grid">
+        <form class="contact-form reveal" data-contact-form>
+          <label><span>Imię</span><input type="text" name="name" autocomplete="name" placeholder="Jak masz na imię?" required></label>
+          <label><span>Telefon lub e-mail</span><input type="text" name="contact" placeholder="Jak możemy odpowiedzieć?" required></label>
+          <label><span>Interesuje mnie</span><select name="service"><option>Masaż relaksacyjny</option><option>Head SPA</option><option>Masaż leczniczy</option><option>Masaż twarzy</option><option>Inny rytuał</option></select></label>
+          <label class="contact-form__wide"><span>Wiadomość</span><textarea name="message" rows="4" placeholder="Napisz kilka słów o swoich potrzebach"></textarea></label>
+          <button class="button button--primary contact-form__wide" type="submit">Przygotuj wiadomość <span>↗</span></button>
+          <p class="contact-form__note contact-form__wide">Po wysłaniu skopiujemy treść i otworzymy profil Facebook, aby można było ją wkleić w wiadomości.</p>
         </form>
+
+        <aside class="contact-card reveal">
+          <span class="contact-card__label">Najszybsza droga</span>
+          <h3>Zarezerwuj termin bez czekania na odpowiedź.</h3>
+          <p>W Booksy zobaczysz aktualną dostępność, warianty usług i ceny.</p>
+          <a class="button button--light" href="https://booksy.com/pl-pl/286479_olimpia-beauty-massage_masaz_12326_ruda-slaska" target="_blank" rel="noopener">Otwórz Booksy <span>↗</span></a>
+          <div class="contact-card__address">Pokoju 1/4b<br>41-709 Ruda Śląska</div>
+        </aside>
       </div>
     </section>
 
-    <section class="social-faq" aria-label="Social media i najczęściej zadawane pytania">
+    <section class="social-faq">
       <div class="social-panel">
-        <div class="section-kicker reveal"><span>06</span> Social media</div>
-        <h2 class="reveal">Obserwuj Olimpię.</h2>
-        <p class="social-panel__lead reveal">Rytuały, kulisy salonu i chwile, w których codzienność zwalnia.</p>
-
-        <div class="devices reveal" data-parallax-area>
-          <a class="device device--desktop" href="https://www.instagram.com/olimpia.beautyandmassage" target="_blank" rel="noopener" data-parallax="7">
-            <div class="device__top"><i></i><i></i><i></i></div>
-            <div class="device__screen"><img src="social-instagram.png" alt="Profil Olimpia Beauty & Massage na Instagramie"></div>
-            <span class="device__label">Instagram ↗</span>
-          </a>
-          <a class="device device--phone" href="https://www.facebook.com/olimpia.beautyandmassage/" target="_blank" rel="noopener" data-parallax="-9">
-            <div class="device__phone-shell"><span class="device__notch"></span><div class="device__screen"><img src="social-facebook.png" alt="Profil Olimpia Beauty & Massage na Facebooku"></div></div>
-            <span class="device__label">Facebook ↗</span>
-          </a>
-        </div>
-
-        <div class="social-links reveal">
-          <a href="https://www.instagram.com/olimpia.beautyandmassage" target="_blank" rel="noopener">Instagram <span>↗</span></a>
-          <a href="https://www.facebook.com/olimpia.beautyandmassage/" target="_blank" rel="noopener">Facebook <span>↗</span></a>
+        <div class="social-panel__content">
+          <div class="section-kicker section-kicker--light reveal"><span>06</span> Bądź blisko</div>
+          <h2 class="reveal">Zobacz Olimpię<br>od środka.</h2>
+          <p class="reveal">Realizacje, atmosfera studia, nowe rytuały i dostępne terminy.</p>
+          <div class="devices reveal" aria-label="Podgląd profili społecznościowych">
+            <div class="device device--desktop"><div class="device__top"><i></i><i></i><i></i></div><img src="social-instagram.png" alt="Profil Instagram Olimpia Beauty & Massage" loading="lazy"></div>
+            <div class="device device--phone"><div class="device__notch"></div><img src="social-facebook.png" alt="Profil Facebook Olimpia Beauty & Massage" loading="lazy"></div>
+          </div>
+          <div class="social-links reveal">
+            <a href="https://www.instagram.com/olimpia.beautyandmassage" target="_blank" rel="noopener">Instagram <span>↗</span></a>
+            <a href="https://www.facebook.com/olimpia.beautyandmassage/" target="_blank" rel="noopener">Facebook <span>↗</span></a>
+          </div>
         </div>
       </div>
 
       <div class="faq-panel">
-        <img src="separator-studio.jpg" alt="Greckie wnętrze spa" loading="lazy">
-        <div class="faq-panel__shade"></div>
         <div class="faq-panel__content">
-          <div class="section-kicker section-kicker--light reveal"><span>07</span> FAQ</div>
-          <h2 class="reveal">Najczęściej zadawane pytania.</h2>
+          <div class="section-kicker section-kicker--light reveal"><span>07</span> Szybkie FAQ</div>
+          <h2 class="reveal">Zanim<br>przyjdziesz.</h2>
           <div class="faq reveal" data-faq>
-            <article class="faq-item is-open">
-              <button type="button" aria-expanded="true"><span>Jak wybrać odpowiedni masaż?</span><i>−</i></button>
-              <div class="faq-answer"><p>Możesz wybrać kategorię na Booksy lub napisać do nas — podpowiemy rytuał dopasowany do napięć i oczekiwanego efektu.</p></div>
-            </article>
-            <article class="faq-item"><button type="button" aria-expanded="false"><span>Czy trzeba przygotować się do wizyty?</span><i>+</i></button><div class="faq-answer"><p>Wystarczy przyjść kilka minut wcześniej. Wszystkie pozostałe wskazówki otrzymasz przed rozpoczęciem zabiegu.</p></div></article>
-            <article class="faq-item"><button type="button" aria-expanded="false"><span>Czy można kupić voucher?</span><i>+</i></button><div class="faq-answer"><p>Tak. Voucher kupisz w salonie lub zamówisz po kontakcie telefonicznym.</p></div></article>
-            <article class="faq-item"><button type="button" aria-expanded="false"><span>Jak długo trwa wizyta?</span><i>+</i></button><div class="faq-answer"><p>W zależności od rytuału od około 60 do 100 minut. Dokładny czas widoczny jest przy każdej usłudze w Booksy.</p></div></article>
-            <article class="faq-item"><button type="button" aria-expanded="false"><span>Gdzie znajduje się salon?</span><i>+</i></button><div class="faq-answer"><p>Przy ul. Pokoju 1/4b w Rudzie Śląskiej.</p></div></article>
-            <article class="faq-item"><button type="button" aria-expanded="false"><span>Jak zarezerwować termin?</span><i>+</i></button><div class="faq-answer"><p>Najszybciej przez Booksy. Możesz też zadzwonić lub napisać przez social media.</p></div></article>
+            <article class="faq-item"><button type="button" aria-expanded="false"><span>Jak wybrać odpowiedni masaż?</span><i>+</i></button><div class="faq-answer"><p>Możesz opisać napięcia i oczekiwany efekt w wiadomości. Na miejscu zakres oraz intensywność zostaną dopasowane po krótkiej rozmowie.</p></div></article>
+            <article class="faq-item"><button type="button" aria-expanded="false"><span>Czy trzeba przygotować się do wizyty?</span><i>+</i></button><div class="faq-answer"><p>Wystarczy przyjść kilka minut wcześniej i poinformować o samopoczuciu, urazach, ciąży lub innych kwestiach ważnych dla bezpieczeństwa zabiegu.</p></div></article>
+            <article class="faq-item"><button type="button" aria-expanded="false"><span>Jak zarezerwować termin?</span><i>+</i></button><div class="faq-answer"><p>Najszybciej przez profil Booksy. Dostępny jest również kontakt przez Facebook i Instagram.</p></div></article>
+            <article class="faq-item"><button type="button" aria-expanded="false"><span>Gdzie znajduje się studio?</span><i>+</i></button><div class="faq-answer"><p>Olimpia Beauty & Massage mieści się przy ul. Pokoju 1/4b, 41-709 Ruda Śląska.</p></div></article>
+            <article class="faq-item"><button type="button" aria-expanded="false"><span>Czy mogę podarować wizytę bliskiej osobie?</span><i>+</i></button><div class="faq-answer"><p>Tak. Szczegóły zakupu prezentu najlepiej potwierdzić bezpośrednio z Olimpią przez telefon lub wiadomość.</p></div></article>
           </div>
         </div>
       </div>
@@ -364,17 +331,17 @@
   <footer class="footer">
     <div class="footer__top">
       <img src="logo-light.png" alt="Olimpia Beauty & Massage">
-      <p>Twoje ciało zasługuje na rytuał.</p>
+      <p>Twoja chwila spokoju<br>zaczyna się tutaj.</p>
       <a class="button button--light" href="https://booksy.com/pl-pl/286479_olimpia-beauty-massage_masaz_12326_ruda-slaska" target="_blank" rel="noopener">Umów wizytę <span>↗</span></a>
     </div>
     <div class="footer__bottom">
-      <span>© <span data-year></span> Olimpia Beauty & Massage</span>
-      <span>ul. Pokoju 1/4b · Ruda Śląska</span>
+      <span>© 2026 Olimpia Beauty & Massage</span>
+      <span>Pokoju 1/4b · Ruda Śląska</span>
       <div><a href="https://www.instagram.com/olimpia.beautyandmassage" target="_blank" rel="noopener">Instagram</a><a href="https://www.facebook.com/olimpia.beautyandmassage/" target="_blank" rel="noopener">Facebook</a><a href="https://booksy.com/pl-pl/286479_olimpia-beauty-massage_masaz_12326_ruda-slaska" target="_blank" rel="noopener">Booksy</a></div>
     </div>
   </footer>
 
   <div class="toast" role="status" aria-live="polite" data-toast></div>
-  <script src="script.js?v=2.0.0"></script>
+  <script src="script.js?v=3.0.0"></script>
 </body>
 </html>
