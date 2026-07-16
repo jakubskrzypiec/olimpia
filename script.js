@@ -38,7 +38,7 @@
       heroIndex = (heroIndex + 1) % heroSlides.length;
       heroSlides[heroIndex].classList.add('is-active');
       if (heroCurrent) heroCurrent.textContent = String(heroIndex + 1).padStart(2, '0');
-    }, 2650);
+    }, 3200);
   }
 
   const revealItems = document.querySelectorAll('.reveal');
